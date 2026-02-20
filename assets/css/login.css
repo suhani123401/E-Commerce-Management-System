@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #30475e;
+    color: white;
+    padding: 20px 0;
+}
+
+header nav a {
+    color: white;
+    margin-right: 30px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #75cfb8;
+}
+
+header .sign-in-up button {
+    background-color: #75cfb8;
+    font-size: 16px;
+    font-weight: 550;
+    padding: 6px 14px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .sign-in-up button:hover {
+    background-color: #64bda8;
+}
+
+header .sign-in-up button:last-child {
+    background-color: #fa9579;
+}
+
+header .sign-in-up button:last-child:hover {
+    background-color: #e88364;
+}
+
+/* POPUP */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Added for visibility above other elements */
+    display: none;
+}
+
+.popup-container .popup {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px 25px 30px 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 320px;
+}
+
+.popup-container .popup h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: #30475e;
+}
+
+.popup-container .popup h2 button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-weight: 550;
+    color: #797775;
+    cursor: pointer;
+}
+
+.popup-container .popup input {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #30475e; /* ✅ fixed this line */
+    padding: 5px 8px;
+    font-weight: 550;
+    font-size: 14px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.popup-container .popup input:focus {
+    border-color: #75cfb8;
+}
+
+.popup-container .popup button.login-btn {
+    font-weight: 550;
+    font-size: 15px; /* ✅ corrected from “font-style: 15px;” */
+    color: white;
+    background-color: #30475e;
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-container .popup button.login-btn:hover {
+    background-color: #22354b;
+}
+.popup-container .register{
+    background-color: #edeef7;
+}
+.popup-container .register h2{
+    color:#fa9579;
+}
+.popup-container .register .register-btn {
+   
+     border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-weight: 550;
+    color: #797775;
+    cursor: pointer;
+}
